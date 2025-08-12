@@ -10,6 +10,11 @@ body {
   color: #333;
 }
 
+body::-webkit-scrollbar {
+  /* Chrome, Safari */
+  display: none;
+}
+
 /* Animasi Page Transition */
 .page-transition {
   opacity: 0;
@@ -87,10 +92,15 @@ body {
   }
 }
 
+/* Supaya saat SweetAlert muncul, scroll tetap bisa */
+body.swal2-shown {
+  overflow: auto !important;
+}
+
 /* Style khusus SweetAlert */
 .swal-custom {
   border-radius: 20px !important;
-  background: #fff0f5 !important; /* pink lembut */
+  background: #fff0f5 !important;
   box-shadow: 0 5px 20px rgba(255, 0, 150, 0.3) !important;
 }
 
