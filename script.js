@@ -38,5 +38,8 @@ function showMessage() {
       title: "swal-title",
       confirmButton: "swal-button",
     },
+    allowOutsideClick: true,
+    allowEscapeKey: true,
+    allowEnterKey: true,
   });
 }
