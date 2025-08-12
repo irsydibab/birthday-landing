@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Sayang ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="page-transition">
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Hati Animasi -->
+        <span class="heart" style="left:10%; animation-delay: 0s;">❤️</span>
+        <span class="heart" style="left:50%; animation-delay: 2s;">💖</span>
+        <span class="heart" style="left:80%; animation-delay: 4s;">💕</span>
+
+        <img src="img/cake.png" alt="Kue Ulang Tahun" class="cake-img">
+
+        <div class="hero-text">
+            <h1>Selamat Ulang Tahun, Cintaku</h1>
+            <h2>Semoga setiap langkahmu dipenuhi cinta, kebahagiaan, dan doa terbaik dariku yang tak akan pernah
+                berhenti mencintaimu ❤️</h2>
+        </div>
+
+        <div class="scroll-down" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+            ⬇ Lihat Kenangan Kita
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="gallery" class="gallery">
+        <img src="img/1.jpg" alt="Kenangan 1">
+        <img src="img/2.jpg" alt="Kenangan 2">
+        <img src="img/3.jpg" alt="Kenangan 3">
+        <img src="img/4.jpg" alt="Kenangan 4">
+    </section>
+
+    <section class="romantic-words section-animate">
+        <div class="message-box">
+            <p id="typewriter"></p>
+        </div>
+    </section>
+
+    <!-- Balon Interaktif -->
+    <section class="balloons-section section-animate">
+        <h3 class="section-title">Klik Balonnya</h3>
+        <div class="balloons">
+            <div class="balloon float" onclick="showMessage()">🎈</div>
+            <div class="balloon float delay-1" onclick="showMessage()">🎈</div>
+            <div class="balloon float delay-2" onclick="showMessage()">🎈</div>
+        </div>
+        <h3 class="section-title">❤️ I Love You ❤️</h3>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
